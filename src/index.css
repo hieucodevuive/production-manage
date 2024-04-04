@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ph-header-item {
+  @apply hover:text-orange-500 active:text-orange-500;
+}
