@@ -9,12 +9,12 @@ export default function Header() {
   const open = Boolean(anchorEl)
   const handleClick = (e) => {
     setAnchorEl(e.currentTarget)
-  };
+  }
   const handleClose = () => {
     setAnchorEl(null)
-  };
+  }
   return (
-    <div className='flex h-20 border-b-2 items-center justify-between pl-20 
+    <div className='flex h-20 border-b-2 items-center justify-between pl-20
     pr-20 bg-slate-700 text-white text-lg font-semibold'>
       <div className='border-r-4 p-2 border-orange-500'>
         Forge
@@ -34,7 +34,7 @@ export default function Header() {
           aria-expanded={open ? 'true' : undefined}
           onClick={handleClick}
         >
-        <span className='text-orange-500 font-medium text-lg'>Admin</span>
+          <span className='text-orange-500 font-medium text-lg'>Admin</span>
         </Button>
         <Menu
           id="basic-menu"
@@ -42,14 +42,14 @@ export default function Header() {
           open={open}
           onClose={handleClose}
           MenuListProps={{
-            'aria-labelledby': 'basic-button',
+            'aria-labelledby': 'basic-button'
           }}
         >
           <MenuItem onClick={handleClose}>Hồ sơ của bạn</MenuItem>
           <MenuItem onClick={handleClose}>Quản lý tài khoản</MenuItem>
           <MenuItem onClick={handleClose}>Đăng xuất</MenuItem>
         </Menu>
-    </div>
+      </div>
     </div>
   )
 }
