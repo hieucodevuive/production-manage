@@ -9,7 +9,7 @@ import Signin from './pages/Signin'
 import PrivateRoute from './components/PrivateRoute'
 
 export default function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   return (
     <div className='overflow-hidden'>
