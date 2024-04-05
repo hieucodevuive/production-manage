@@ -14,7 +14,7 @@ export default function Header() {
     setAnchorEl(null)
   }
   return (
-    <div className='flex h-20 border-b-2 items-center justify-between pl-20
+    <div className='flex h-18 border-b-2 items-center justify-between pl-20
     pr-20 bg-slate-700 text-white text-lg font-semibold'>
       <div className='border-r-4 p-2 border-orange-500'>
         Forge
