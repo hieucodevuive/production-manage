@@ -84,8 +84,8 @@ export default function Staff() {
               <StyledTableCell>{row.CV}</StyledTableCell>
               <StyledTableCell>
                 <div className='flex gap-2'>
-                  <button><EditIcon /></button>
-                  <button><DeleteForeverIcon /></button>
+                <button><EditIcon sx={{color: 'gray'}}/></button>
+                  <button><DeleteForeverIcon sx={{color: 'red'}}/></button>
                 </div>
               </StyledTableCell>
             </StyledTableRow>
